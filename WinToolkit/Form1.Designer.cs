@@ -98,7 +98,7 @@ namespace WinToolkit
             // 
             // pshell
             // 
-            this.pshell.Location = new System.Drawing.Point(118, 124);
+            this.pshell.Location = new System.Drawing.Point(224, 68);
             this.pshell.Name = "pshell";
             this.pshell.Size = new System.Drawing.Size(100, 25);
             this.pshell.TabIndex = 14;
@@ -138,7 +138,7 @@ namespace WinToolkit
             // 
             // pshell_admin
             // 
-            this.pshell_admin.Location = new System.Drawing.Point(118, 149);
+            this.pshell_admin.Location = new System.Drawing.Point(224, 93);
             this.pshell_admin.Name = "pshell_admin";
             this.pshell_admin.Size = new System.Drawing.Size(100, 25);
             this.pshell_admin.TabIndex = 17;
@@ -148,7 +148,7 @@ namespace WinToolkit
             // 
             // sniptool
             // 
-            this.sniptool.Location = new System.Drawing.Point(224, 68);
+            this.sniptool.Location = new System.Drawing.Point(118, 124);
             this.sniptool.Name = "sniptool";
             this.sniptool.Size = new System.Drawing.Size(100, 50);
             this.sniptool.TabIndex = 18;
