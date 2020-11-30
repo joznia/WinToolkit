@@ -31,13 +31,14 @@ namespace WinToolkit
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.regedit_button = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
+            this.perfmon = new System.Windows.Forms.Button();
             this.asd_button = new System.Windows.Forms.Button();
             this.gpedit_button = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.cmd = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
+            this.compmgmt = new System.Windows.Forms.Button();
+            this.cmd_admin = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // regedit_button
@@ -50,14 +51,15 @@ namespace WinToolkit
             this.regedit_button.UseVisualStyleBackColor = true;
             this.regedit_button.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button7
+            // perfmon
             // 
-            this.button7.Location = new System.Drawing.Point(330, 12);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(100, 50);
-            this.button7.TabIndex = 6;
-            this.button7.Text = "button7";
-            this.button7.UseVisualStyleBackColor = true;
+            this.perfmon.Location = new System.Drawing.Point(330, 12);
+            this.perfmon.Name = "perfmon";
+            this.perfmon.Size = new System.Drawing.Size(100, 50);
+            this.perfmon.TabIndex = 6;
+            this.perfmon.Text = "Resource Monitor";
+            this.perfmon.UseVisualStyleBackColor = true;
+            this.perfmon.Click += new System.EventHandler(this.perfmon_Click);
             // 
             // asd_button
             // 
@@ -79,14 +81,15 @@ namespace WinToolkit
             this.gpedit_button.UseVisualStyleBackColor = true;
             this.gpedit_button.Click += new System.EventHandler(this.button9_Click);
             // 
-            // button2
+            // cmd
             // 
-            this.button2.Location = new System.Drawing.Point(118, 68);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(100, 50);
-            this.button2.TabIndex = 15;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.cmd.Location = new System.Drawing.Point(118, 68);
+            this.cmd.Name = "cmd";
+            this.cmd.Size = new System.Drawing.Size(100, 25);
+            this.cmd.TabIndex = 15;
+            this.cmd.Text = "Command Prompt";
+            this.cmd.UseVisualStyleBackColor = true;
+            this.cmd.Click += new System.EventHandler(this.cmd_Click);
             // 
             // button3
             // 
@@ -106,27 +109,39 @@ namespace WinToolkit
             this.button10.Text = "button10";
             this.button10.UseVisualStyleBackColor = true;
             // 
-            // button14
+            // compmgmt
             // 
-            this.button14.Location = new System.Drawing.Point(12, 68);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(100, 50);
-            this.button14.TabIndex = 9;
-            this.button14.Text = "button14";
-            this.button14.UseVisualStyleBackColor = true;
+            this.compmgmt.Location = new System.Drawing.Point(12, 68);
+            this.compmgmt.Name = "compmgmt";
+            this.compmgmt.Size = new System.Drawing.Size(100, 50);
+            this.compmgmt.TabIndex = 9;
+            this.compmgmt.Text = "Computer Management";
+            this.compmgmt.UseVisualStyleBackColor = true;
+            this.compmgmt.Click += new System.EventHandler(this.compmgmt_Click);
+            // 
+            // cmd_admin
+            // 
+            this.cmd_admin.Location = new System.Drawing.Point(118, 93);
+            this.cmd_admin.Name = "cmd_admin";
+            this.cmd_admin.Size = new System.Drawing.Size(100, 25);
+            this.cmd_admin.TabIndex = 16;
+            this.cmd_admin.Text = "CMD (Admin)";
+            this.cmd_admin.UseVisualStyleBackColor = true;
+            this.cmd_admin.Click += new System.EventHandler(this.cmd_admin_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(442, 130);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.cmd_admin);
+            this.Controls.Add(this.cmd);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button10);
-            this.Controls.Add(this.button14);
+            this.Controls.Add(this.compmgmt);
             this.Controls.Add(this.gpedit_button);
             this.Controls.Add(this.asd_button);
-            this.Controls.Add(this.button7);
+            this.Controls.Add(this.perfmon);
             this.Controls.Add(this.regedit_button);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
@@ -138,13 +153,14 @@ namespace WinToolkit
         #endregion
 
         private System.Windows.Forms.Button regedit_button;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button perfmon;
         private System.Windows.Forms.Button asd_button;
         private System.Windows.Forms.Button gpedit_button;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button cmd;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.Button compmgmt;
+        private System.Windows.Forms.Button cmd_admin;
     }
 }
 
