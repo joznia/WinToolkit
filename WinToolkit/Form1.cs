@@ -21,7 +21,7 @@ namespace WinToolkit
         /// <summary>
         /// DEFINE FUNCTIONS
         /// </summary>
-        
+
         public void RegEdit() // Define a function for Registry Editor
         {
             Process regEdit = new Process();            // Start a new process and call it regEdit
@@ -55,6 +55,13 @@ namespace WinToolkit
             cMg.StartInfo.Arguments = "/c compmgmt.msc";  // Open gpedit.msc
             cMg.Start();                                  // Start the process
         }
+        public void diskMgmt() // Define a function for Disk Management (diskmgmt.msc)
+        {
+            Process dMg = new Process();                  // Start a new process and call it dMg
+            dMg.StartInfo.FileName = "cmd.exe";           // To open Disk Management we need to use Command Prompt with arguments, similar to GPOedit
+            dMg.StartInfo.Arguments = "/c diskmgmt.msc";  // Open gpedit.msc
+            dMg.Start();                                  // Start the process
+        }
         public void cmdPrompt() // Define a function for Command Prompt
         {
             Process cmdP = new Process();                  // Start a new process and call it cmdP
@@ -87,7 +94,12 @@ namespace WinToolkit
             taskM.StartInfo.FileName = "taskmgr.exe";       // Open taskmgr.exe, the executable for Task Manager
             taskM.Start();                                  // Start the process
         }
-
+        public void msConf() // Define a function for msinfo32.
+        {
+            Process msC = new Process();                    // Start a new process and call it msC
+            msC.StartInfo.FileName = "msinfo32.exe";        // Open msinfo32.exe
+            msC.Start();                                    // Start the process  
+        }
         /// <summary>
         /// ASSIGN BUTTONS TO FUNCTIONS
         /// </summary>
@@ -142,6 +154,16 @@ namespace WinToolkit
         private void taskman_Click(object sender, EventArgs e)
         {
             taskMan();
+        }
+
+        private void sniptool_Click(object sender, EventArgs e)
+        {
+            msConf();
+        }
+
+        private void diskmgmt_Click(object sender, EventArgs e)
+        {
+            diskMgmt();
         }
     }
 }
