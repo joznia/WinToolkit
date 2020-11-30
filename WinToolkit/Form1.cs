@@ -68,6 +68,25 @@ namespace WinToolkit
             cmdA.StartInfo.Verb = "runas";                 // Run as administrator
             cmdA.Start();                                  // Start the process
         }
+        public void powerSH() // Define a function for PowerShell
+        {
+            Process pSH = new Process();                  // Start a new process and call it pSH
+            pSH.StartInfo.FileName = "powershell.exe";    // Open powershell.exe
+            pSH.Start();                                  // Start the process
+        }
+        public void powerA() // Define a function for PowerShell as admin
+        {
+            Process pA = new Process();                  // Start a new process and call it pA
+            pA.StartInfo.FileName = "powershell.exe";    // Open powershell.exe
+            pA.StartInfo.Verb = "runas";                 // Run as administrator
+            pA.Start();                                  // Start the process
+        }
+        public void taskMan() // Define a function for Task Manager
+        {
+            Process taskM = new Process();                  // Start a new process and call it taskM
+            taskM.StartInfo.FileName = "taskmgr.exe";       // Open taskmgr.exe, the executable for Task Manager
+            taskM.Start();                                  // Start the process
+        }
 
         /// <summary>
         /// ASSIGN BUTTONS TO FUNCTIONS
@@ -108,6 +127,21 @@ namespace WinToolkit
         private void cmd_admin_Click(object sender, EventArgs e)
         {
             cmdAdmin();
+        }
+
+        private void pshell_Click(object sender, EventArgs e)
+        {
+            powerSH();
+        }
+
+        private void pshell_admin_Click(object sender, EventArgs e)
+        {
+            powerA();
+        }
+
+        private void taskman_Click(object sender, EventArgs e)
+        {
+            taskMan();
         }
     }
 }

@@ -35,10 +35,11 @@ namespace WinToolkit
             this.asd_button = new System.Windows.Forms.Button();
             this.gpedit_button = new System.Windows.Forms.Button();
             this.cmd = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
+            this.pshell = new System.Windows.Forms.Button();
+            this.taskman = new System.Windows.Forms.Button();
             this.compmgmt = new System.Windows.Forms.Button();
             this.cmd_admin = new System.Windows.Forms.Button();
+            this.pshell_admin = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // regedit_button
@@ -91,23 +92,25 @@ namespace WinToolkit
             this.cmd.UseVisualStyleBackColor = true;
             this.cmd.Click += new System.EventHandler(this.cmd_Click);
             // 
-            // button3
+            // pshell
             // 
-            this.button3.Location = new System.Drawing.Point(224, 68);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(100, 50);
-            this.button3.TabIndex = 14;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.pshell.Location = new System.Drawing.Point(224, 68);
+            this.pshell.Name = "pshell";
+            this.pshell.Size = new System.Drawing.Size(100, 25);
+            this.pshell.TabIndex = 14;
+            this.pshell.Text = "PowerShell";
+            this.pshell.UseVisualStyleBackColor = true;
+            this.pshell.Click += new System.EventHandler(this.pshell_Click);
             // 
-            // button10
+            // taskman
             // 
-            this.button10.Location = new System.Drawing.Point(330, 68);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(100, 50);
-            this.button10.TabIndex = 13;
-            this.button10.Text = "button10";
-            this.button10.UseVisualStyleBackColor = true;
+            this.taskman.Location = new System.Drawing.Point(330, 68);
+            this.taskman.Name = "taskman";
+            this.taskman.Size = new System.Drawing.Size(100, 50);
+            this.taskman.TabIndex = 13;
+            this.taskman.Text = "Task Manager";
+            this.taskman.UseVisualStyleBackColor = true;
+            this.taskman.Click += new System.EventHandler(this.taskman_Click);
             // 
             // compmgmt
             // 
@@ -129,15 +132,26 @@ namespace WinToolkit
             this.cmd_admin.UseVisualStyleBackColor = true;
             this.cmd_admin.Click += new System.EventHandler(this.cmd_admin_Click);
             // 
+            // pshell_admin
+            // 
+            this.pshell_admin.Location = new System.Drawing.Point(224, 93);
+            this.pshell_admin.Name = "pshell_admin";
+            this.pshell_admin.Size = new System.Drawing.Size(100, 25);
+            this.pshell_admin.TabIndex = 17;
+            this.pshell_admin.Text = "pShell (Admin)";
+            this.pshell_admin.UseVisualStyleBackColor = true;
+            this.pshell_admin.Click += new System.EventHandler(this.pshell_admin_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(442, 130);
+            this.Controls.Add(this.pshell_admin);
             this.Controls.Add(this.cmd_admin);
             this.Controls.Add(this.cmd);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button10);
+            this.Controls.Add(this.pshell);
+            this.Controls.Add(this.taskman);
             this.Controls.Add(this.compmgmt);
             this.Controls.Add(this.gpedit_button);
             this.Controls.Add(this.asd_button);
@@ -157,10 +171,11 @@ namespace WinToolkit
         private System.Windows.Forms.Button asd_button;
         private System.Windows.Forms.Button gpedit_button;
         private System.Windows.Forms.Button cmd;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button pshell;
+        private System.Windows.Forms.Button taskman;
         private System.Windows.Forms.Button compmgmt;
         private System.Windows.Forms.Button cmd_admin;
+        private System.Windows.Forms.Button pshell_admin;
     }
 }
 
