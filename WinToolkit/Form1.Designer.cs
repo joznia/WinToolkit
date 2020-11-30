@@ -41,8 +41,8 @@ namespace WinToolkit
             this.cmd_admin = new System.Windows.Forms.Button();
             this.pshell_admin = new System.Windows.Forms.Button();
             this.sniptool = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.eventviewer = new System.Windows.Forms.Button();
+            this.notepad = new System.Windows.Forms.Button();
             this.diskmgmt = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -156,23 +156,25 @@ namespace WinToolkit
             this.sniptool.UseVisualStyleBackColor = true;
             this.sniptool.Click += new System.EventHandler(this.sniptool_Click);
             // 
-            // button2
+            // eventviewer
             // 
-            this.button2.Location = new System.Drawing.Point(330, 124);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(100, 50);
-            this.button2.TabIndex = 19;
-            this.button2.Text = "Computer Management";
-            this.button2.UseVisualStyleBackColor = true;
+            this.eventviewer.Location = new System.Drawing.Point(330, 124);
+            this.eventviewer.Name = "eventviewer";
+            this.eventviewer.Size = new System.Drawing.Size(100, 50);
+            this.eventviewer.TabIndex = 19;
+            this.eventviewer.Text = "Event Viewer";
+            this.eventviewer.UseVisualStyleBackColor = true;
+            this.eventviewer.Click += new System.EventHandler(this.eventviewer_Click);
             // 
-            // button3
+            // notepad
             // 
-            this.button3.Location = new System.Drawing.Point(224, 124);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(100, 50);
-            this.button3.TabIndex = 20;
-            this.button3.Text = "Computer Management";
-            this.button3.UseVisualStyleBackColor = true;
+            this.notepad.Location = new System.Drawing.Point(224, 124);
+            this.notepad.Name = "notepad";
+            this.notepad.Size = new System.Drawing.Size(100, 50);
+            this.notepad.TabIndex = 20;
+            this.notepad.Text = "Notepad";
+            this.notepad.UseVisualStyleBackColor = true;
+            this.notepad.Click += new System.EventHandler(this.notepad_Click);
             // 
             // diskmgmt
             // 
@@ -190,8 +192,8 @@ namespace WinToolkit
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(442, 186);
             this.Controls.Add(this.diskmgmt);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.notepad);
+            this.Controls.Add(this.eventviewer);
             this.Controls.Add(this.sniptool);
             this.Controls.Add(this.pshell_admin);
             this.Controls.Add(this.cmd_admin);
@@ -223,8 +225,8 @@ namespace WinToolkit
         private System.Windows.Forms.Button cmd_admin;
         private System.Windows.Forms.Button pshell_admin;
         private System.Windows.Forms.Button sniptool;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button eventviewer;
+        private System.Windows.Forms.Button notepad;
         private System.Windows.Forms.Button diskmgmt;
     }
 }

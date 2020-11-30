@@ -81,6 +81,18 @@ namespace WinToolkit
             pSH.StartInfo.FileName = "powershell.exe";    // Open powershell.exe
             pSH.Start();                                  // Start the process
         }
+        public void notePad() // Define a function for Notepad
+        {
+            Process noteP = new Process();                  // Start a new process and call it noteP
+            noteP.StartInfo.FileName = "notepad.exe";       // Open notepad.exe
+            noteP.Start();                                  // Start the process
+        }
+        public void eventView() // Define a function for Event Viewer
+        {
+            Process eveV = new Process();                   // Start a new process and call it eveV
+            eveV.StartInfo.FileName = "eventvwr.exe";       // Open notepad.exe
+            eveV.Start();                                   // Start the process
+        }
         public void powerA() // Define a function for PowerShell as admin
         {
             Process pA = new Process();                  // Start a new process and call it pA
@@ -164,6 +176,16 @@ namespace WinToolkit
         private void diskmgmt_Click(object sender, EventArgs e)
         {
             diskMgmt();
+        }
+
+        private void notepad_Click(object sender, EventArgs e)
+        {
+            notePad();
+        }
+
+        private void eventviewer_Click(object sender, EventArgs e)
+        {
+            eventView();
         }
     }
 }
