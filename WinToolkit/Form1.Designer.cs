@@ -29,6 +29,7 @@ namespace WinToolkit
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.regedit_button = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.asd_button = new System.Windows.Forms.Button();
@@ -127,6 +128,7 @@ namespace WinToolkit
             this.Controls.Add(this.asd_button);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.regedit_button);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Windows Toolkit";
             this.ResumeLayout(false);

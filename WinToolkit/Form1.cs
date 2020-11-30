@@ -33,7 +33,7 @@ namespace WinToolkit
         public void ControlPanel() // Define a function for Control Panel
         {
             Process cPanel = new Process();                  // Start a new process and call it controlPanel
-            cPanel.StartInfo.FileName = "cmd.exe";           // To open the GPO editor we need to use cmd with arguments
+            cPanel.StartInfo.FileName = "control.exe";       // Open the Control panel, called control.exe
             cPanel.Start();                                  // Start the process
         }
 
